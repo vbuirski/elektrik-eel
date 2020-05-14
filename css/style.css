@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/*CSS Document*/
+/*General Rules*/
+a{text-decoration:none;transition:0.3s}
+a:hover{color:rgb(200, 63, 191);transition:0.7s}
+a:visited{color:white}
+body{margin:0; font-size: x-large;}
+.main{width:1440px; height:2360px; margin:auto; background: rgb(27, 28, 33);}
+.hero{
+  width: 100%; height:980px;
+  position: relative;
+  overflow:hidden; position:relative;
+}
+.hero .menu{
+  width:100%; height:160px;
+  position: absolute;
+  top: 0px;
+  display:flex;justify-content: center;align-items: center;
+  margin-top:0px;
+}
+
+.inner{
+  width:100%; height:160px;
+  position: absolute;
+  top: 0px;
+  display:flex;justify-content: center;align-items: center;
+  margin-top:0px;
+}
+.hero h1{
+  width: 100%;
+  height:300px;
+  position: absolute;
+  top: 400px;
+  text-align:center;
+  color: black; text-shadow: -3px 0 #96ff2d, 0 3px #96ff2d, 3px 0 #96ff2d, 0 -3px #96ff2d;
+  font-family: 'Mogra', cursive;font-size:400%;
+  margin:0; display:flex; justify-content: center; align-items: center;
+  letter-spacing: 3px;
+}
+.hero h2{
+  width: 100%;
+  height:200px;
+  position: absolute;
+  top: 680px;
+  text-align:center;
+  color: #96ff2d; text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  font-family: 'Mogra', cursive;font-size:300%;
+  display:flex;justify-content: center;align-items:center;
+  letter-spacing: 3px;
+  margin-top: -8%;
+}
+.hero .toggle{
+  width:100%; height:90px;
+  color: white;
+}
+
+.hero .menu-button{
+  width:25%;
+  height:90px;
+  text-align:center;
+  color: #96ff2d; text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  font-family: 'Mogra', cursive;font-size:200%;
+  display:flex;justify-content: center;align-items:center;
+  vertical-align: middle;
+  letter-spacing: 3px;
+}
+.hero .menu-button:hover{
+  background:#ff4017; opacity: 0.8;
+  display:flex;justify-content: center;align-items:center;
+}
+.hero .button{
+  width: 26%;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: 820px;
+  left: 37%;
+  background:#00c840; color: #ff4017;
+  font-family: 'Monteserrat', sans-serif;font-size:200%;font-weight:bolder;
+  text-align: center;
+  margin:0 auto;
+  display:block; justify-content:center; align-items:center;
+  letter-spacing: 1px;
+}
+.hero .button:hover{
+    background: #ff4017; color:#00c840;transition:0.5s
+}
+
+.hero img{
+  width:100%;
+  height:auto;
+  margin-top: 0;
+  opacity: 0.9;
+  overflow: hidden;
+}
+form{
+  width: 20%;
+  height:50px;
+  display: flex; justify-content: center; align-items: center;
+}
+.search{
+  width: 20%;
+  height: 30px;
+  border: 0px solid #ffffff;
+  background: transparent;
+  border-radius: 20px;
+  background-image: url('../images/search-solid.svg');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: 5px 3px;
+  color: white; padding-left: 30px; box-sizing: border-box;
+  outline:0; transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+.search:focus{
+  border: 2px solid #ffffff; transition: 0.3s; width:70%
+}
+
+.bio{
+  width:100%;
+  height: 270px;
+  background: rgb(27, 28, 33);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display:flex;justify-content: center;align-items:center;
+  padding-left:20px;
+  padding-right:20px;
+  box-sizing: border-box;
+}
+.bio:hover{
+  text-shadow: 0px 0px 20px #ff4017;
+}
+.gallery{
+  height:420px;
+  background:#000b10;
+  opacity: 0.9;
+  display:flex;justify-content: center;align-items:center;
+}
+.gallery .container{
+  width: 33.3%;
+  height:400px;
+  display:flex;justify-content: center;align-items:center;
+}
+.gallery .image{
+  height:400px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.gallery .middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .image .gallery .container:hover{
+  opacity: 0.3;
+  transform: scale(1.2);
+}
+.gallery .container:hover .middle{
+  opacity: 1;
+}
+.gallery .text{
+  background-color: #ff4017;
+  opacity: 0.9;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  padding: 16px 32px;
+  letter-spacing: 3px;
+}
+/* Artists Page */
+.artists-gallery{
+  width:100%;
+  height:auto;
+  display:flex;justify-content: center;align-items:center;
+  flex-wrap: wrap;
+  padding-top:3%;
+  box-sizing: border-box;
+}
+
+.artists-gallery .imagebox{
+  width: 25%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: 200px;
+  object-fit: cover;
+  background:grey;
+  position: relative;
+
+}
+.artists-gallery .imagebox:nth-child(3){margin-right:0}
+.artists-gallery .imagebox:nth-child(6){margin-right:0}
+.artists-gallery .imagebox:nth-child(9){margin-right:0}
+.artists-gallery .imagebox:last-child{margin-right:0}
+.artists-gallery .imagebox h1{ width:100%; height: 40px; background:rgba(0, 0, 0, 0.5);color: #ff4017;
+position: absolute; bottom: 0px; z-index:1;margin:0; font-family: 'Monteserrat', sans-serif; font-size: larger;
+font-weight: lighter;transition:0.5s;
+display:flex; justify-content: center; align-items: center; letter-spacing: 1px;}
+.artists-gallery .imagebox img {width:100%; height: 200px; object-fit: cover; transform:scale(1); transition:0.5s;}
+.artists-gallery .imagebox:hover img{transform:scale(1.1); transition:0.5s; box-shadow: 0px 0px 30px #1c9186}
+.artists-gallery .imagebox:hover h1{transform:scale(1.1);transition:0.5s;}
+/* End Artists Page */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image:hover{
+  transform: scale(1.05);
+}
+.tickets{
+  height:320px; background:  #00c840;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+.tickets .bold{
+  font-weight: bold;
+}
+.tickets:hover{
+  color: #ff4017;
+}
+.subscribe{
+  width: 100%;
+  height:180px;
+  background:rgb(27, 28, 33);
+}
+.subscribe .heading{
+  height:90px;
+  padding-top: 20px;
+  text-align:center;
+  color: #96ff2d; text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  font-family: 'Mogra', cursive;font-size:260%;
+  display:flex;justify-content: center;align-items:center;
+  vertical-align: middle;
+  letter-spacing: 3px;
+}
+.subscribe .heading:hover{
+  transform: scale(1.1);
+  transition: 0.3s
+}
+.subscribe .row {
+  width: 100%;
+  display:flex;justify-content: center;align-items:center;
+}
+.subscribe #email {
+  width: 40%;
+  background-color: #ff4017;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size:100%;
+  padding: 14px 20px;
+  margin-right: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.subscribe #submit {
+  width: 20%;
+  background-color: white;
+  color: #ff4017;
+  font-family: 'Roboto', sans-serif;
+  font-size:100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.subscribe #submit:hover {
+  color: rgb(27, 28, 33);;
+}
+.social {
+  width:100%;
+  height: 120px;
+  background:rgb(27, 28, 33);
+  display:flex;justify-content: center;align-items: center;
+}
+.icons {
+  width: 20%;
+  height: 120px;
+  color:white;
+  display:flex;justify-content:center;align-items:center;
+}
+.icons i:hover {transform:rotateY(360deg);transition:0.7s}
+footer {
+  width:100%; height:50px; margin:auto;
+  background:rgb(27, 28, 33);
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  letter-spacing: 1px;
+  text-align: center;
+  display:flex;justify-content: center;align-items:center;
+}
+
+/* Specification - the specific rules below should override some of the above rules for certain screen sizes */
+@media screen and (min-width: 1024px){
+  .toggle{display:none}
+}
+
+/* Tablet Portrait + Mobile Landscape */
+@media screen and (max-width:768px){
+  .hero .menu-button:hover{background: transparent;}
+  .artists-gallery .imagebox:hover img{transform: none;box-shadow: none}
+  .artists-gallery .imagebox:hover h1{transform: none}
+
+  .main{width:100%; height:auto}
+
+  .hero {height: 500px;}
+
+  .toggle{display:none}
+  .hero h1 {
+    height:200px;
+    position: absolute;
+    top: 280px;
+  }
+  .hero h2 {
+    top: 360px;
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .bio {height: 300px;}
+
+  .artists-gallery .imagebox{width:45%}
+  .artists-gallery .imagebox:nth-child(2n){margin-right:0}
+  .artists-gallery .imagebox:nth-child(3n){margin-right:2%}
+  .artists-gallery .imagebox:last-child{margin-right:0}
+  .social {
+    width:100%;
+}
+
+/*Mobile Portrait*/
+@media screen and (max-width:600px){
+  a:hover{color:white}
+  .hero .menu-button:hover{background: transparent}
+  .artists-gallery .imagebox:hover img{transform:none; box-shadow: none}
+  .artists-gallery .imagebox:hover h1{transform:none}
+
+  .main{width:100%}
+  
+  .hero{width: 100%;height: 340px;}
+
+  .hero .menu{height:39px; overflow:hidden;transition:0.5s}
+  .hero .dropdown{height:150px; transition:0.5s}
+  .inner{height:auto;flex-flow:row wrap}
+
+  .hero .toggle{
+    height: auto;
+    display:flex;justify-content: center;align-items:center;
+  }
+
+  .hero .menu-button{
+    width:100%;
+    height:30px;
+    text-align:center;
+    color: #96ff2d; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: 'Mogra', cursive;font-size:70%;
+    display:flex;justify-content: center;align-items:center;
+    letter-spacing: 2px;
+  }
+
+  .hero form{width:40%; height: auto;}
+
+  .hero h1{
+    height:60px;
+    width: 100%;
+    top: 190px;
+    text-align:center;
+    color: black; text-shadow: -2px 0 #96ff2d, 0 2px #96ff2d, 2px 0 #96ff2d, 0 -2px #96ff2d;
+    font-family: 'Mogra', cursive;font-size:180%;
+    margin:0; display:flex; justify-content: center; align-items: center;
+    letter-spacing: 1px;
+  }
+  .hero h2{
+    height:60px;
+    width: 100%;
+    padding-bottom: 0px;
+    top: 230px;
+    margin-top: 0%;
+    text-align:center;
+    color: black; text-shadow: -2px 0 #96ff2d, 0 2px #96ff2d, 2px 0 #96ff2d, 0 -2px #96ff2d;
+    font-family: 'Mogra', cursive;font-size:120%;
+    letter-spacing: 1px;
+  }
+  .hero .button{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .hero .button{
+    width: 40%;
+    height: 30px;
+    line-height: 40px;
+    background:#00c840; color: #ff4017;
+    font-family: 'Monteserrat', sans-serif;font-size:90%;font-weight:bolder;
+    text-align: center;
+    margin:0 auto;
+    display:flex; justify-content:center; align-items:center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  .bio{
+    width:100%;
+    height: 200px;
+    background: rgb(27, 28, 33);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    text-align: center;
+    display:flex;justify-content: center;align-items:center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .artists-gallery .imagebox{width: 100%;height: 200px;}
+  .artists-gallery .imagebox:nth-child(n){margin-right:0}
+  .artists-gallery .imagebox:last-child{margin-right:0}
+  .artists-gallery .imagebox h1{ height: 30px; font-size: medium}
+  .artists-gallery .imagebox img {width:100%; height: 200px;}
+  }
+  .social{width:100%;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .icons{width: 20%; height: 40px;}
+  footer{margin-top: 0px; height:40px;font-size: small;}
+}
